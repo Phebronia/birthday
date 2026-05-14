@@ -2,12 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=./birthday.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Birthday Website</title>
-  <link rel="canonical" href="./birthday.html">
+  <title>Happy 22nd Birthday Juvana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="birthday.css">
 </head>
 <body>
-  <p>If you are not redirected automatically, <a href="./birthday.html">open the birthday page</a>.</p>
+  <div class="page-shell">
+    <section class="hero" aria-label="Birthday hero">
+      <div class="string-lights" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="hero-decor hero-balloons" aria-hidden="true">
+        <span class="balloon balloon-large"></span>
+        <span class="balloon balloon-mid"></span>
+        <span class="balloon balloon-clear"></span>
+        <span class="balloon balloon-small"></span>
+      </div>
+
+      <div class="hero-decor hero-cake" aria-hidden="true">
+        <div class="cake-plate"></div>
+        <div class="cake-base">
+          <span class="candle"></span>
+          <span class="candle"></span>
+          <span class="candle"></span>
+          <span class="candle"></span>
+        </div>
+      </div>
+
+      <div class="hero-hearts" aria-hidden="true">
+        <span>â¤</span>
+        <span>â¤</span>
+        <span>â¤</span>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Made to celebrate you</p>
+        <h1>Happy 22nd<br>Birthday Juvana â™¡</h1>
+        <p class="hero-copy">Today is all about you âœ¨</p>
+        <button class="cta-button" id="surpriseButton" type="button">Open Your Surprise ðŸŽ</button>
+      </div>
+
+      <div class="confetti-layer" id="heroConfetti" aria-hidden="true"></div>
+    </section>
+
+    <div class="message-modal" id="messageModal" aria-hidden="true">
+      <div class="message-backdrop" data-close-modal></div>
+      <section class="message-panel section-card" id="messageBox" aria-labelledby="message-title" aria-modal="true" role="dialog">
+        <button class="modal-close" id="closeMessage" type="button" aria-label="Close message">Ã—</button>
+        <div class="message-icon left" aria-hidden="true">ðŸŽˆ</div>
+        <div class="message-copy">
+          <h2 id="message-title">A Message For You ðŸ’Œ</h2>
+          <p>
+            Happy 22nd Birthday Juvana! I hope this year brings you endless happiness,
+            success, love, and all the beautiful things your heart dreams of. You
+            deserve the whole world and more. Thank you for being such a special
+            person in my live. With love, Rony ðŸ’–
+          </p>
+        </div>
+        <div class="message-icon right" aria-hidden="true">ðŸ’Œ</div>
+      </section>
+    </div>
+
+    <footer class="footer">Made with love by Rony â¤ï¸</footer>
+  </div>
+
+  <script src="birthday.js"></script>
 </body>
 </html>
